@@ -1,1 +1,1 @@
-Ethereum Smart-Contract
+이더리움 Smart-Contract
