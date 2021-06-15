@@ -1,6 +1,6 @@
 # 이더리움 스마트 컨트랙트
 
-## 스마트 컨트랙트 컴파일
+## Smart Contract Compile
 
 ```sh
 cd sc
