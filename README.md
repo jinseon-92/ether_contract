@@ -1,7 +1,7 @@
 # 이더리움 스마트 컨트랙트
 
 
-- ethereum/solc:0.4.24 Base Image 사용
+- ethereum/solc:0.4.24 Base 이미지
 - Docker 설치
 
 
