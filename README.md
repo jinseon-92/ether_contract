@@ -10,5 +10,5 @@
 ```sh
 cd sc
 sudo docker build -t [image:tag]
-sudo docker run -i -t --rm [image:tag]
+sudo docker run -i -t --rm [image:tag] --optimize --bin Faucet.sol
 ```
