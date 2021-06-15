@@ -12,4 +12,5 @@
 cd sc
 sudo docker build -t [image:tag]
 sudo docker run -it --rm [image:tag] --optimize --bin Faucet.sol
+sudo docker run -it --rm [image:tag] --abi Faucet.sol
 ```
