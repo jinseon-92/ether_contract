@@ -1,5 +1,7 @@
 # 이더리움 스마트 컨트랙트
 
+- Docker 설치 필수
+
 ## Smart Contract Compile
 
 ```sh
