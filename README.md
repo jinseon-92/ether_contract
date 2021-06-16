@@ -34,15 +34,20 @@ function FunctionName([parameters]) {public|private|internal|external}
 
 ---
 
-**생성자 구문**
+**생성자 구문, selfdestruct**
 
 ```sh
 pragma ^0.4.22
 contract MEContract {
     constructor () {
-      // 생성자
     }
 }
 ```
 
-###### 생성자는 컨트랙트 생성 시 실행되며 컨트랙트 상태를 초기화한 다음 소멸된다
+###### constructor : 생성자는 컨트랙트 생성 시 실행되며 컨트랙트 상태를 초기화 한 다음 소멸된다
+
+```sh
+selfdestruct(address recipient);
+```
+
+###### selfdestruct : 컨트랙트를 제거할 때 사용하고 인수로 받는 주소는 컨트랙트에 남은 이더를 전송할 주소이다
