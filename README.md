@@ -1,6 +1,7 @@
 # 이더리움 스마트 컨트랙트
 
 
+- Solidity
 - Base OS: Ubuntu 18.04
 - Base Image:  ethereum/solc:0.4.24 
 - Docker 설치
