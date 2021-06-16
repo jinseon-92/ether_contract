@@ -19,7 +19,7 @@ sudo docker run -it --rm [image:tag] --abi Faucet.sol
 ```
 ---
 
-**함수 구문**
+**함수**
 
 ```sh
 function FunctionName([parameters]) {public|private|internal|external}
@@ -34,7 +34,7 @@ function FunctionName([parameters]) {public|private|internal|external}
 
 ---
 
-**생성자 구문, selfdestruct**
+**생성자(constructor)**
 
 ```sh
 pragma ^0.4.22
@@ -44,10 +44,14 @@ contract MEContract {
 }
 ```
 
-###### constructor : 생성자는 컨트랙트 생성 시 실행되며 컨트랙트 상태를 초기화 한 다음 소멸된다
+###### 생성자는 컨트랙트 생성 시 실행되며 컨트랙트 상태를 초기화 한 다음 소멸된다
+
+---
+
+**SELFDESTRUCT**
 
 ```sh
 selfdestruct(address recipient);
 ```
 
-###### selfdestruct : 컨트랙트를 제거할 때 사용하고 인수로 받는 주소는 컨트랙트에 남은 이더를 전송할 주소이다
+###### 컨트랙트를 제거할 때 사용하고 인수로 받는 주소는 컨트랙트에 남은 이더를 전송할 주소이다
