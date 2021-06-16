@@ -31,3 +31,16 @@ function FunctionName([parameters]) {public|private|internal|external}
 ###### private : 내부 함수와 유사하지만 파생된 컨트랙트에서도 호출할 수 없다
 ###### payable : 선언되어 있으면 입금을 받을 수 있는 함수이고, 그렇지 않으면 입금이 거부된다
 
+
+**생성자 구문**
+
+```sh
+pragma ^0.4.22
+contract MEContract {
+    constructor () {
+      // 생성자
+    }
+}
+```
+
+###### 생성자는 컨트랙트 생성 시 실행되며 컨트랙트 상태를 초기화한 다음 소멸된다
