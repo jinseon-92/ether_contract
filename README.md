@@ -24,3 +24,5 @@ sudo docker run -it --rm [image:tag] --abi Faucet.sol
 function FunctionName([parameters]) {public|private|internal|external}
 [pure|constant|view|payable] [modifiers] [returns (return types)]
 ```
+
+##### public : 공개함수(기본값) 다른 컨트랙트 또는 EOA 트랜잭션 또는 컨트랙트 내부에서 호출 가능
