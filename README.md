@@ -9,7 +9,7 @@
 
 ## Smart Contract Compile
 
-이미지 빌드 후 컴파일하여 바이너리 코드와 ABI JSON 데이터 확인
+ * 이미지 빌드 후 컴파일하여 바이너리 코드와 ABI JSON 데이터 확인
 
 ```sh
 cd sc
@@ -18,7 +18,7 @@ sudo docker run -it --rm [image:tag] --optimize --bin Faucet.sol
 sudo docker run -it --rm [image:tag] --abi Faucet.sol
 ```
 
-함수 구문
+ * 함수 구문
 
 ```sh
 function FunctionName([parameters]) {public|private|internal|external}
