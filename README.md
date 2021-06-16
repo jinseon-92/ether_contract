@@ -9,7 +9,7 @@
 
 ## Smart Contract Compile
 
-#### 이미지 빌드 후 컴파일하여 바이너리 코드와 ABI JSON 데이터 확인
+#### 이미지 빌드 후 컨트랙트를 컴파일하여 바이너리 코드와 ABI JSON 데이터 확인
 
 ```sh
 cd sc
