@@ -86,7 +86,7 @@ contract Child is Parent {
 
 ---
 
-**에러 처리**
+**예외 처리**
 
 ```sh
 require(msg.sender == owner, "Only Contract Owner");
@@ -94,5 +94,21 @@ require(msg.sender == owner, "Only Contract Owner");
 
 ###### assert : 결과가 참인지 판단하기 위해 사용함
 ###### require : 조건을 만족하지 않는 경우 함수가 실행되지 않는다
-###### revert : 컨트랙트의 실행을 중지하고 모든 변경 상태를 되돌린다.
+###### revert : 컨트랙트의 실행을 중지하고 모든 변경 상태를 되돌린다
 
+---
+
+**이벤트**
+
+```sh
+contract Faucet is mortal {
+    event Withdrawal(address indexed to, uint amount);
+    [...]
+    
+    function withdraw(uint withdraw_amount) public {
+        [...]
+        emit Withdrawal(msg.sender, withdraw_amount);
+}
+```
+
+###### event를 통해 트랜잭션 로그에 원하는 정보를 포함시킬 수 있다 

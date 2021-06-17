@@ -23,12 +23,18 @@ contract mortal is owned {
 }
 
 contract Faucet is mortal {
+    event Withdrawal(address indexed to, uint amount);
+    event Deposit(address indexed from, uint amount);  
+ 
     // 요청하는 사람 이더전송(출금)
     function withdraw(uint withdraw_amount) public {
         require(withdraw_amount <= 0.1 ether);
         require(this.balance >= withdraw_amount, "Insufficient balance in faucet for withdrawal request");
         msg.sender.transfer(withdraw_amount);
+        emit Withdrawal(msg.sender, withdraw_amount);
     }
     // 입금 금액 수락
-    function () public payable{}
+    function () public payable{
+        emit Deposit(msg.sender, msg.value);
+    }
 }
