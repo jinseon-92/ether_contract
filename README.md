@@ -92,9 +92,9 @@ contract Child is Parent {
 require(msg.sender == owner, "Only Contract Owner");
 ```
 
-###### assert : 결과가 참인지 판단하기 위해 사용함
-###### require : 조건을 만족하지 않는 경우 함수가 실행되지 않는다
-###### revert : 컨트랙트의 실행을 중지하고 모든 변경 상태를 되돌린다
+###### Assert : 결과가 참인지 판단하기 위해 사용함
+###### Require : 조건을 만족하지 않는 경우 함수가 실행되지 않는다
+###### Revert : 컨트랙트의 실행을 중지하고 모든 변경 상태를 되돌린다
 
 ---
 
@@ -111,4 +111,9 @@ contract Faucet is mortal {
 }
 ```
 
-###### event를 통해 트랜잭션 로그에 원하는 정보를 포함시킬 수 있다. 인수 앞에 indexed 키워드를 사용하면 인덱싱 된 해시테이블 값으로 만들 수 있다 
+###### Event를 통해 트랜잭션 로그에 원하는 정보를 포함시킬 수 있다. 인수 앞에 indexed 키워드를 사용하면 인덱싱 된 해시 테이블 값으로 만들 수 있다 
+
+
+## Truffle Install
+
+
