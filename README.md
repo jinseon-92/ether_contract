@@ -60,7 +60,7 @@ selfdestruct(address recipient);
 
 ---
 
-***함수 변경자(modifier)***
+**함수 변경자(modifier)**
 
 ```sh
 modifier onlyOwner {
