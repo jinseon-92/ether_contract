@@ -90,6 +90,7 @@ contract Child is Parent {
 
 ```sh
 require(msg.sender == owner, "Only Contract Owner");
+```
 
 ###### assert : 결과가 참인지 판단하기 위해 사용함
 ###### require : 조건을 만족하지 않는 경우 함수가 실행되지 않는다
