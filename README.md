@@ -14,7 +14,7 @@
 
 ```sh
 cd sc
-sudo docker build -t [image:tag]
+sudo docker build -t [image:tag] .
 sudo docker run -it --rm [image:tag] --optimize --bin Faucet.sol
 sudo docker run -it --rm [image:tag] --abi Faucet.sol
 ```
@@ -72,4 +72,15 @@ modifier onlyOwner {
 ###### 컨트랙트 내 함수에 적용할 여러 조건들을 생성하기 위해 사용한다
 ###### 변경자를 적용하려면 함수 선언에 변경자 이름을 추가해야 하며 함수에 둘 이상의 변경자를 적용 가능하다
 
+---
+
+**컨트랙트 상속**
+
+```sh
+contract Child is Parent {
+    ...
+}
+```
+
+###### 컨트랙트 상속은 is 키워드를 사용하고, Child 컨트랙트가 Parent의 모든 메서드, 기능 및 변수를 상속받는다
 
