@@ -10,7 +10,7 @@ contract owned {
 
     // 변경자 접근 제어
     modifier onlyOwner {
-        require(msg.sender == owner);
+        require(msg.sender == owner, "Only the contract owner can call this Function");
         _;
     }
 }
@@ -26,6 +26,7 @@ contract Faucet is mortal {
     // 요청하는 사람 이더전송(출금)
     function withdraw(uint withdraw_amount) public {
         require(withdraw_amount <= 0.1 ether);
+        require(this.balance >= withdraw_amount, "Insufficient balance in faucet for withdrawal request");
         msg.sender.transfer(withdraw_amount);
     }
     // 입금 금액 수락

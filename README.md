@@ -84,3 +84,14 @@ contract Child is Parent {
 
 ###### 컨트랙트 상속은 is 키워드를 사용하고, Child 컨트랙트가 Parent의 모든 메서드, 기능 및 변수를 상속받는다
 
+---
+
+**에러 처리**
+
+```sh
+require(msg.sender == owner, "Only Contract Owner");
+
+###### assert : 결과가 참인지 판단하기 위해 사용함
+###### require : 조건을 만족하지 않는 경우 함수가 실행되지 않는다
+###### revert : 컨트랙트의 실행을 중지하고 모든 변경 상태를 되돌린다. 인수로 에러메시지를 사용함
+
