@@ -165,7 +165,11 @@ networks: {
       host: "127.0.0.1",     // Localhost (default: none)
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
+      gas: 3141592
     // }
+
+# truffle-config 가스 조회 (이더리움 노드에서 실행)
+eth.getBlock("latest").gasLimit
 
 
 npm init
@@ -175,7 +179,22 @@ cd ..
 copy sc/faucet.sol Faucet/contracts	# 컨트랙트를 프로젝트 내부 contracts 디렉토리로 복사
 cd Faucet
 truffle compile 	# 컨트랙트 컴파일
+
+# Faucet 컨트랙트 배포를 위한 마이그레이션 파일 생성
+cd migrations
+vi 2_deploy_contracts.js
+
+var Faucet = artifacts.require("./Faucet.sol");
+
+module.exports = function(deployer) {
+    deployer.deploy(Faucet);
+};
+
+# 트러플 마이그레이션 배포
+truffle migrate --network localnode
 ```
 
 ###### 트러플은 RPC를 통해 로컬 노드와 8545 포트를 이용하여 통신하고, 로컬 노드와 연결된 이더리움 메인 네트워크 또는 롭스텐 테스트 네트워크와 같은 로컬 노드가 연결된 모든 이더리움 네트워크를 사용한다.
 ###### 마이그레이션은 이미 배포된 컨트랙트 버전을 파악하여 변경 된 컨트랙트만 배포하도록 도와준다. (가스 비용 감소)
+
+
