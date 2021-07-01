@@ -5,6 +5,7 @@
 - Base OS: Ubuntu 18.04
 - Base Image:  ethereum/solc:0.4.24 
 - Docker 설치
+- Truffle@4.1.15 
 
 
 
@@ -134,12 +135,28 @@ node -v
 npm -v
 ```
 
+#### Truffle 설치
+
+```sh
+npm -g install truffle@4.1.15
+```
+
 #### Truffle 초기화 & npm 패키지 설치
 
 ```sh
 mkdir Faucet
 cd Faucet
 truffle init
+
+
+Faucet/
+├── contracts
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── test
+└── truffle-config.js
+
 
 npm init
 npm install dotenv truffle-wallet-provider ethereumjs-wallet
