@@ -157,6 +157,17 @@ Faucet/
 └── truffle-config.js
 
 
+# 트러플 네트워크 설정
+vi truffle-config.js 
+
+networks: {
+    localnode: {
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "*",       // Any network (default: none)
+    // }
+
+
 npm init
 npm install dotenv truffle-wallet-provider ethereumjs-wallet
 
