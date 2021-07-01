@@ -133,3 +133,15 @@ nvm install --lts
 node -v
 npm -v
 ```
+
+#### Truffle 초기화 & npm 패키지 설치
+
+```sh
+mkdir Faucet
+cd Faucet
+truffle init
+
+npm init
+npm install dotenv truffle-wallet-provider ethereumjs-wallet
+```
+
