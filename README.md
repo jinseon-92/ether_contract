@@ -164,26 +164,3 @@ npm install dotenv truffle-wallet-provider ethereumjs-wallet
 ###### 트러플은 RPC를 통해 로컬 노드와 8545 포트를 이용하여 통신하고, 로컬 노드와 연결된 이더리움 메인 네트워크 또는 롭스텐 테스트 네트워크와 같은 로컬 노드가 연결된 모든 이더리움 네트워크를 사용한다.
 
 
-B
-B
-B
-B
-B
-B
-B
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-
