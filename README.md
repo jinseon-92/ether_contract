@@ -148,7 +148,6 @@ mkdir Faucet
 cd Faucet
 truffle init
 
-
 Faucet/
 ├── contracts
 │   └── Migrations.sol
