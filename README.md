@@ -138,6 +138,8 @@ npm -v
 #### Truffle 설치
 
 ```sh
+node -v > .nvmrc
+nvm install
 npm -g install truffle@4.1.15
 ```
 
